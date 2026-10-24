@@ -491,7 +491,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 12,
       "id": "a751741c",
       "metadata": {
         "execution": {
@@ -500,13 +500,16 @@
           "iopub.status.idle": "2026-09-29T13:59:43.275607Z",
           "shell.execute_reply": "2026-09-29T13:59:43.275349Z"
         },
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
         "id": "a751741c",
-        "outputId": "39f133f7-79ad-4262-ca62-49ad991fbc54"
+        "outputId": "f52b1ccd-e5e7-4a8b-dea6-229f59243ffb"
       },
       "outputs": [
         {
-          "name": "stdout",
           "output_type": "stream",
+          "name": "stdout",
           "text": [
             "1.8288000000000002\n",
             "[1.83, 1.68, 1.83, 1.68, 2.29]\n"
@@ -535,7 +538,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 13,
       "id": "5d89b395",
       "metadata": {
         "execution": {
@@ -544,11 +547,30 @@
           "iopub.status.idle": "2026-09-29T13:59:43.277642Z",
           "shell.execute_reply": "2026-09-29T13:59:43.277415Z"
         },
-        "id": "5d89b395"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5d89b395",
+        "outputId": "07e733e9-07e3-45be-a8dd-9bd0887df13d"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6.1\n",
+            "1.862\n"
+          ]
+        }
+      ],
       "source": [
-        "# your code here"
+        "# your code here\n",
+        "\n",
+        "def mean(values):\n",
+        "  return sum(values) / len(values)\n",
+        "\n",
+        "print(mean(heights))\n",
+        "print (mean([round(feet_to_metres(h), 2) for h in heights]))"
       ]
     },
     {
